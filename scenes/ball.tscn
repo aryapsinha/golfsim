@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhtf87m1ekows"]
+
+[ext_resource type="Texture2D" uid="uid://dbdrvj10g7lud" path="res://assets/Dinky_Tiny_Golf_Free/Singles/Ball/Ball-Sprites_0006.png" id="2_p26ms"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ne7qm"]
+radius = 6.08276
+
+[node name="Ball" type="RigidBody2D"]
+z_index = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_p26ms")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visibility_layer = 2
+z_index = 10
+shape = SubResource("CircleShape2D_ne7qm")

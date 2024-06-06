@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgdkgx2jah78x"]
+
+[ext_resource type="Texture2D" uid="uid://tmfk0sadlhpv" path="res://assets/longclub.png" id="1_dkc1t"]
+[ext_resource type="Script" path="res://scenes/club.gd" id="1_pmyus"]
+
+[node name="club" type="Sprite2D"]
+z_index = 2
+texture_filter = 1
+position = Vector2(1.22431, -1.05652)
+rotation = -0.00300492
+scale = Vector2(0.133499, 0.15638)
+texture = ExtResource("1_dkc1t")
+offset = Vector2(-80, 100)
+script = ExtResource("1_pmyus")
